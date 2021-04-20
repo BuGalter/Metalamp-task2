@@ -1,6 +1,8 @@
 # task2-Metalamp
 
-Проект для второго задания.
+Проект в разработке.
+
+Макеты страниц по поиску номеров в отеле.
 
 ## Introduction
 
@@ -16,12 +18,6 @@
 
 
 ## Getting started
-
-
-## Documentation
-
-
-## Testing
 
 
 ## Authors
