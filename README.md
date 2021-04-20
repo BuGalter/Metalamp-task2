@@ -2,10 +2,6 @@
 
 Проект для второго задания.
 
-Ссылка на опубликованный проект:
-
-https://bugalter.github.io/task2-Metalamp/
-
 ## Introduction
 
 
