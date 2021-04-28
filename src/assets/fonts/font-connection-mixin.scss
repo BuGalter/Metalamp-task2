@@ -1,0 +1,24 @@
+/* 
+    Миксин для подключения различных шрифтов в формате eot, woff, ttf, svg.
+    Параметры:
+        font-family
+            Семейство шрифтов
+        file-path
+            Путь к файлам со шрифтами от папки в которой будет осуществлен вызов миксина
+        weight
+            Жирность шрифта
+        style
+            Стиль шрифта
+*/
+
+@mixin setFont($font-family, $file-path, $weight, $style) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: local('☺'), url('#{$file-path}.woff') format('woff'), 
+                         url('#{$file-path}.ttf') format('truetype'),
+                         url('#{$file-path}.svg') format('svg');
+    }
+}
