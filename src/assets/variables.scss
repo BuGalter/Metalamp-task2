@@ -1,0 +1,15 @@
+/*
+    Файл содержит переменные в которых будут определенны общие для всего проекта компоненты
+*/
+
+@import './fonts/font-connection-mixin.scss';
+
+/*
+    Определяем основные шрифты проекта через импортированный миксин и присваеваем их в переменные
+*/
+
+@include setFont('Montserrat-Bold', './fonts/Montserrat/Montserrat-Bold', normal, normal);
+@include setFont('Montserrat-Regular', './fonts/Montserrat/Montserrat-Regular', normal, normal);
+
+$montserrat-bold: 'Montserrat-Bold';
+$montserrat-regular: 'Montserrat-Regular';
