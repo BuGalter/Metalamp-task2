@@ -5,11 +5,13 @@
 @import './fonts/font-connection-mixin.scss';
 
 /*
-    Определяем основные шрифты проекта через импортированный миксин и присваеваем их в переменные
+    Определяем основные шрифты проекта через импортированный миксин и присваеваем 
+    их в переменные. Путь нужно указывать относительно папки src. Она указана
+    в webpack.config в context.
 */
 
-@include setFont('Montserrat-Bold', './fonts/Montserrat/Montserrat-Bold', normal, normal);
-@include setFont('Montserrat-Regular', './fonts/Montserrat/Montserrat-Regular', normal, normal);
+@include setFont('Montserrat-Bold', './assets/fonts/Montserrat/Montserrat-Bold', normal, normal);
+@include setFont('Montserrat-Regular', './assets/fonts/Montserrat/Montserrat-Regular', normal, normal);
 
 $montserrat-bold: 'Montserrat-Bold';
 $montserrat-regular: 'Montserrat-Regular';
