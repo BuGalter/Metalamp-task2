@@ -1,9 +1,11 @@
 @import './assets/variables.scss';
+@import './components/logo-img/logo-img.scss';
 
-h1 {
+html {
+    font-size: 14px;
+}
+
+body {
     font-family: $montserrat-bold;
     max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
 }
