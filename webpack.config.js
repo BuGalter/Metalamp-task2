@@ -33,6 +33,10 @@ const config = {
         ],
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: ['file-loader']
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: ['file-loader']
       },
