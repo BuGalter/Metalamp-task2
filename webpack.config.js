@@ -13,7 +13,10 @@ const config = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: './index.pug'}),
+    new HtmlWebpackPlugin(
+    {   template: './index.pug',
+        favicon: './components/head/favicon.ico'
+    }),
     new MiniCssExtractPlugin({filename: '[name].[hash].css'}),
     new CleanWebpackPlugin(),
  ],
@@ -33,7 +36,7 @@ const config = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
         use: ['file-loader']
       },
       {
