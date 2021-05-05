@@ -4,16 +4,22 @@ doctype html
 html(lang="ru")
     +headTitle('Index page metalamp-task-2')
     body
-        .header 
-            include ./components/logo-img/logo-img.pug
-            .logo-text 
-                h3 for Metalamp
-        .project-info
-            .headline 
-                h1 Ссылки на страницы задания номер 2
-            .info-about-project 
-                p 
-                    | Страницы по поиску номеров в отеле. Сверстанные с использованием
-                    | БЭМ, препроцессора, шаблонизатора. Сборка проекта была осуществленна
-                    | с помощью Webpack.
-        .list-refs
+        .content
+            .header 
+                .header__logo 
+                    include ./components/logo-img/logo-img.pug
+                .logo-text 
+                    h3 for Metalamp
+            hr
+            .project-info
+                .headline 
+                    h1 Задание номер 2 для компании MetaLamp
+                .info-about-project 
+                    p 
+                        | В задание были сверстанны страницы по поиску номеров в отеле, с использованием
+                        | БЭМ, препроцессора SCSS, шаблонизатора PUG. Сборка проекта была осуществленна
+                        | с помощью Webpack.
+            hr
+            .list-refs
+                .list-refs__headline 
+                    h2 Ссылки на страницы

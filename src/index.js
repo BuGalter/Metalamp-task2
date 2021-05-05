@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", addListRefs());
 /**
   * Формируем список ссылок на сверстаные страницы проекта
   * @name addListRefs()
+  * @private Импортируем массив объектов refs, которые содержат данные для формирования 
+  * @private ссылок.
   * @private Находим блок, создаем список, добавляем в дерево, создаем элемент списка,
   * @private добавляем элемент в список, добавляем ссылку.
-  * @private Импортируем массив объектов, которые содержат данные для формирования ссылок.
   */
 function addListRefs() {
     let listNode = document.body.querySelector('.list-refs');
