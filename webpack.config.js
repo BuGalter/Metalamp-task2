@@ -14,7 +14,7 @@ const config = {
 
   plugins: [
     new HtmlWebpackPlugin({template: './index.pug'}),
-    new MiniCssExtractPlugin({filename: '[name].css'}),
+    new MiniCssExtractPlugin({filename: '[name].[hash].css'}),
     new CleanWebpackPlugin(),
  ],
 
