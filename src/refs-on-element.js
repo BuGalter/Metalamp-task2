@@ -1,7 +1,7 @@
 export const refs = [
     {
         "title": "Ссылка на UI kit",
-        "ref": "#"
+        "ref": "ui-kit.html"
     },
     {
         "title": "Ссылка на Landing page",

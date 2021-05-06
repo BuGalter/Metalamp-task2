@@ -6,7 +6,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const config = {
   context: path.resolve(__dirname, 'src'),
 
-  entry: './index.js',
+  entry: {
+    indexPage: './index.js',
+    uikitPage: './ui-kit/ui-kit.js'
+  },
+
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
@@ -15,8 +19,16 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin(
     {   template: './index.pug',
-        favicon: './components/head/favicon.ico'
+        filename: 'index.html',
+        favicon: './components/head/favicon.ico',
+        chunks: ['indexPage']
     }),
+    new HtmlWebpackPlugin(
+      {   template: './ui-kit/ui-kit.pug',
+          filename: 'ui-kit.html',
+          //favicon: './components/head/favicon.ico',
+          chunks: ['uikitPage']
+      }),
     new MiniCssExtractPlugin({filename: '[name].[hash].css'}),
     new CleanWebpackPlugin(),
  ],
