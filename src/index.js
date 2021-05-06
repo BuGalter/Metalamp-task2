@@ -1,4 +1,4 @@
-import {refs} from './refs-on-element';
+import {refs} from './helpers/refs-on-element';
 import './index.scss';
 
 //Ждем загрузки дом дерева, событие подходит для добавления узлов
