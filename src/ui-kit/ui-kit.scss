@@ -1,9 +1,62 @@
+.body {
+    max-width: 1440px;
+}
+
+.header {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__logo {
     background: url("./assets/ui-kit-logo.png") no-repeat;
     width: 48px;
     height: 48px;
 }
 
-.header__headline {
+.content-colors-type {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+}
+
+
+.colors {
+    width: 50%;
+    display: inline-block;
+    background-color: aquamarine;
+    .colors-element {
+        background-color: darksalmon;
+        margin-bottom: 10px;
+        &__rectangle {
+            width: 70px;
+            height: 70px;
+            background-color: darkred;
+            display: inline-block;
+        } 
+        &__text{
+            background-color: darksalmon;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+            margin-top: 10px;
+            .color-name {
+                background-color: darkslategrey;
+            }
+            .color-hex {
+                background-color: deeppink;
+                margin-top: 10px;
+            }
+        }
+            
+    }
+}
+
+.types {
     text-align: center;
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+    background-color: cadetblue;
 }
