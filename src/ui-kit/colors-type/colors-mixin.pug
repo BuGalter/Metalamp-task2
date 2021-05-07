@@ -1,0 +1,14 @@
+- var colorName = ['Dark Shade 100%', 'Dark Shade 100%', 'Dark Shade 100%'];
+- var colorHex = ['#1F2041', '#1F2041', '#1F2041'];
+- var colorRectangle = ['#fff', '#16f', '#13d'];
+
+mixin colorsMixin(colorName, colorRectangle, colorHex)
+    .colors
+        each text, index in colorName
+            .colors-element
+                .colors-element__rectangle(style='background-color:' + colorRectangle[index])
+                .colors-element__text
+                    .color-name
+                        span= text  
+                    .color-hex
+                        span= colorHex[index] 
