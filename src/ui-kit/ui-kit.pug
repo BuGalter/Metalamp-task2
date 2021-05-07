@@ -1,5 +1,5 @@
 include ../components/head/head
-include ./colors-type/colors-mixin
+
 
 doctype html
 html(lang="ru")
@@ -8,9 +8,4 @@ html(lang="ru")
         .header 
             .header__logo 
         .content-colors-type
-            +colorsMixin(colorName, colorRectangle, colorHex)
-            .types 
-                h1 hkjvfzsd 
-                h2 kfdgd'gd 
-                h3 kjsfdfsdf
-                p jASOJfofjopjfsopd
+            include ./colors-type/colors-type.pug
