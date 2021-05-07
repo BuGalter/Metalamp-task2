@@ -1,14 +1,26 @@
-- var colorName = ['Dark Shade 100%', 'Dark Shade 100%', 'Dark Shade 100%'];
-- var colorHex = ['#1F2041', '#1F2041', '#1F2041'];
-- var colorRectangle = ['#fff', '#16f', '#13d'];
+- var mainColor = 'Dark Shade';
+- var mainHexValue = '#1F2041';
 
-mixin colorsMixin(colorName, colorRectangle, colorHex)
+- 
+    var colorsProperty = [
+        {name: mainColor + '100%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
+        {name: mainColor + '75%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'}, 
+        {name: mainColor + '50%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
+        {name: mainColor + '25%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
+        {name: mainColor + '5%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
+        {name: 'Purple', hexValue: '#BC9CFF', color: 'rgb(#1F2041, .75)'},
+        {name: 'Green', hexValue: '#6FCF97', color: 'rgb(#1F2041, .75)'}
+        ];
+
+mixin colorsMixin()
     .colors
-        each text, index in colorName
+        each text in colorsProperty 
             .colors-element
-                .colors-element__rectangle(style='background-color:' + colorRectangle[index])
+                .bla 
+                    span text.color
+                .colors-element__rectangle(style={background: text.hexValue, opacity: '0.5'})
                 .colors-element__text
                     .color-name
-                        span= text  
+                        span= text.name
                     .color-hex
-                        span= colorHex[index] 
+                        span= text.hexValue 
