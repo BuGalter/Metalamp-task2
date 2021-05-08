@@ -1,26 +1,37 @@
+//-
+    Миксин для формирования блока colors страницы проекта ui kit, который содержит
+    квадраты с примерами цветов, использованных в проекте и их описанием.
+    
+    Параметры определенны в самом миксине
+        mainColor
+            Основной цвет для текста описания квадратов
+        mainHexValue
+            Основное шестнадцатиричное представление цвета для текста описания квадратов
+        colorsProperty
+            Массив объектов в котором храняться итоговые текстовые данные
+  //
+
 - var mainColor = 'Dark Shade';
 - var mainHexValue = '#1F2041';
 
 - 
     var colorsProperty = [
-        {name: mainColor + '100%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
-        {name: mainColor + '75%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'}, 
-        {name: mainColor + '50%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
-        {name: mainColor + '25%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
-        {name: mainColor + '5%', hexValue: mainHexValue, color: 'rgb(#1F2041, .75)'},
-        {name: 'Purple', hexValue: '#BC9CFF', color: 'rgb(#1F2041, .75)'},
-        {name: 'Green', hexValue: '#6FCF97', color: 'rgb(#1F2041, .75)'}
+        {name: mainColor + ' 100%', hexValue: mainHexValue},
+        {name: mainColor + ' 75%', hexValue: mainHexValue}, 
+        {name: mainColor + ' 50%', hexValue: mainHexValue},
+        {name: mainColor + ' 25%', hexValue: mainHexValue},
+        {name: mainColor + ' 5%', hexValue: mainHexValue},
+        {name: 'Purple', hexValue: '#BC9CFF'},
+        {name: 'Green', hexValue: '#6FCF97'}
         ];
 
 mixin colorsMixin()
     .colors
-        each text in colorsProperty 
+        each property, index in colorsProperty 
             .colors-element
-                .bla 
-                    span text.color
-                .colors-element__rectangle(style={background: text.hexValue, opacity: '0.5'})
+                div(class='colors-element__rectangle' class='_number' + index)
                 .colors-element__text
                     .color-name
-                        span= text.name
+                        span= property.name
                     .color-hex
-                        span= text.hexValue 
+                        span= property.hexValue 

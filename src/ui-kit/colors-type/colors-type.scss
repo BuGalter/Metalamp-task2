@@ -15,10 +15,14 @@
         &__rectangle {
             width: 70px;
             height: 70px;
-            //background-color: rgb(#1F2041, .50);
             //background-color: darkred;
             display: inline-block;
-        } 
+        }
+        @for $i from 0 through 6 {
+            ._number#{$i} { 
+              background-color: rgb(#1F2041, .50);
+            }
+          }
         &__text{
             background-color: darksalmon;
             display: inline-block;
