@@ -12,26 +12,26 @@ $maxRectangles: 6;
 $mainFont: $montserrat-bold;
 
 .content-colors-type {
-    //max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: antiquewhite;
     font-family: $mainFont;
     color: nth($colors, 1);
     font-size: 19px;
+    max-height: 900px;
 }
 
 .colors {
-    //width: 60%;
+    width: 282px;
+    height: 610px;
     margin-top: 145px;
     margin-left: 150px;
     position: absolute;
-    //display: inline-block;
     .colors-element {
         margin-bottom: 10px;
         &__rectangle {
             width: 70px;
             height: 70px;
+            border-radius: 6px;
             display: inline-block;
         }
         //Формируем в цикле дополнительный класс для элемента квадрат и определяем цвет заливки
@@ -55,17 +55,18 @@ $mainFont: $montserrat-bold;
 }
 
 .text-examples {
+    width: 436px;
+    height: 321px;
     text-align: center;
     vertical-align: top;
     margin-top: 145px;
     margin-left: 846px;
     position: absolute;
-    //width: 40%;
-    //display: inline-block;
     .text__headline {
         vertical-align: top;
         display: inline-block;
         width: 20%;
+        font-family: $montserrat-regular;
     }
 
     .h1 {
