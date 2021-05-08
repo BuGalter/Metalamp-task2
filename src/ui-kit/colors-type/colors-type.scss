@@ -5,6 +5,10 @@
 $colors: $dark-shadow, $dark-shadow-75, $dark-shadow-50,
          $dark-shadow-25, $dark-shadow-05, $purple, $green;
 
+// Задаем на один меньше, потому что в миксине отсчет идет от нуля, а в списки цветов от еденицы 
+// особенность списков препроцессора scss.
+$maxRectangles: 6;
+
 .content-colors-type {
     max-width: 80%;
     margin-left: auto;
@@ -25,7 +29,7 @@ $colors: $dark-shadow, $dark-shadow-75, $dark-shadow-50,
             display: inline-block;
         }
         //Формируем в цикле дополнительный класс для элемента квадрат и определяем цвет заливки
-        @for $i from 0 through 6 {
+        @for $i from 0 through $maxRectangles {
             ._number#{$i} { 
               background-color: nth($colors, $i + 1);
             }
