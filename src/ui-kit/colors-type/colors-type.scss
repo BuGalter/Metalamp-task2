@@ -1,3 +1,10 @@
+ @import '../../assets/variables.scss';
+
+ // Массив цветов, которые необходимы для заливки квадратов, импортируем их из variables.scss
+ // Порядок цветов должен соответствовать порядку их определения в миксине
+$colors: $dark-shadow, $dark-shadow-75, $dark-shadow-50,
+         $dark-shadow-25, $dark-shadow-05, $purple, $green;
+
 .content-colors-type {
     max-width: 80%;
     margin-left: auto;
@@ -15,12 +22,12 @@
         &__rectangle {
             width: 70px;
             height: 70px;
-            //background-color: darkred;
             display: inline-block;
         }
+        //Формируем в цикле дополнительный класс для элемента квадрат и определяем цвет заливки
         @for $i from 0 through 6 {
             ._number#{$i} { 
-              background-color: rgb(#1F2041, .50);
+              background-color: nth($colors, $i + 1);
             }
           }
         &__text{

@@ -10,8 +10,8 @@
     в webpack.config в context.
 */
 
-@include setFont('Montserrat-Bold', './assets/fonts/Montserrat/Montserrat-Bold', normal, normal);
-@include setFont('Montserrat-Regular', './assets/fonts/Montserrat/Montserrat-Regular', normal, normal);
+@include setFont('Montserrat-Bold', '/assets/fonts/Montserrat/Montserrat-Bold', normal, normal);
+@include setFont('Montserrat-Regular', '/assets/fonts/Montserrat/Montserrat-Regular', normal, normal);
 
 $montserrat-bold: 'Montserrat-Bold';
 $montserrat-regular: 'Montserrat-Regular';
