@@ -12,20 +12,22 @@ $maxRectangles: 6;
 $mainFont: $montserrat-bold;
 
 .content-colors-type {
-    max-width: 80%;
+    //max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: antiquewhite;
     font-family: $mainFont;
     color: nth($colors, 1);
+    font-size: 19px;
 }
 
 .colors {
-    width: 50%;
-    display: inline-block;
-    background-color: aquamarine;
+    //width: 60%;
+    margin-top: 145px;
+    margin-left: 150px;
+    position: absolute;
+    //display: inline-block;
     .colors-element {
-        background-color: darksalmon;
         margin-bottom: 10px;
         &__rectangle {
             width: 70px;
@@ -39,17 +41,13 @@ $mainFont: $montserrat-bold;
             }
           }
         &__text{
-            background-color: darksalmon;
             display: inline-block;
             vertical-align: top;
             margin-left: 30px;
             margin-top: 10px;
-            .color-name {
-                background-color: darkslategrey;
-            }
             .color-hex {
-                background-color: deeppink;
                 margin-top: 10px;
+                font-family: $montserrat-regular;
             }
         }
             
@@ -59,35 +57,36 @@ $mainFont: $montserrat-bold;
 .text-examples {
     text-align: center;
     vertical-align: top;
-    width: 50%;
-    display: inline-block;
-    background-color: cadetblue;
+    margin-top: 145px;
+    margin-left: 846px;
+    position: absolute;
+    //width: 40%;
+    //display: inline-block;
     .text__headline {
-        background-color: deeppink;
         vertical-align: top;
         display: inline-block;
         width: 20%;
-        .h1 {
-            font-size: 24px;
-        }
-        .h2 {
-            font-size: 19px;
-        }
-        .h3 {
-            font-size: 12px;
-        }
-        .body {
-            font-size: 14px;
-        }
     }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .h3 {
+        font-size: 12px;
+    }
+
+    .body {
+        font-size: 14px;
+        color: nth($colors, 2);
+        font-family: $montserrat-regular;
+    }
+
     .text__example {
-        background-color: forestgreen;
         text-align: left;
         vertical-align: top;
         display: inline-block;
         width: 80%;
-        .h1 {
-            font-size: 24px;
-        }
+       
     }
 }
