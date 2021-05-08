@@ -9,11 +9,15 @@ $colors: $dark-shadow, $dark-shadow-75, $dark-shadow-50,
 // особенность списков препроцессора scss.
 $maxRectangles: 6;
 
+$mainFont: $montserrat-bold;
+
 .content-colors-type {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: antiquewhite;
+    font-family: $mainFont;
+    color: nth($colors, 1);
 }
 
 .colors {
