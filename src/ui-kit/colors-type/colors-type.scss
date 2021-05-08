@@ -52,10 +52,38 @@ $maxRectangles: 6;
     }
 }
 
-.types {
+.text-examples {
     text-align: center;
     vertical-align: top;
     width: 50%;
     display: inline-block;
     background-color: cadetblue;
+    .text__headline {
+        background-color: deeppink;
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        .h1 {
+            font-size: 24px;
+        }
+        .h2 {
+            font-size: 19px;
+        }
+        .h3 {
+            font-size: 12px;
+        }
+        .body {
+            font-size: 14px;
+        }
+    }
+    .text__example {
+        background-color: forestgreen;
+        text-align: left;
+        vertical-align: top;
+        display: inline-block;
+        width: 80%;
+        .h1 {
+            font-size: 24px;
+        }
+    }
 }
