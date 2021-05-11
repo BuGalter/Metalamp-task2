@@ -23,9 +23,12 @@ $mainFont: $montserrat-bold;
 .colors {
     width: 282px;
     height: 610px;
-    margin-top: 145px;
-    margin-left: 150px;
-    position: absolute;
+    // margin-top: 145px;
+    // margin-left: 150px;
+    // position: absolute;
+    padding-top: 145px;
+    padding-left: 150px;
+    display: inline-block;
     .colors-element {
         margin-bottom: 10px;
         &__rectangle {
@@ -59,9 +62,12 @@ $mainFont: $montserrat-bold;
     height: 321px;
     text-align: center;
     vertical-align: top;
-    margin-top: 145px;
-    margin-left: 846px;
-    position: absolute;
+    // margin-top: 145px;
+    //margin-left: 846px;
+    // position: absolute;
+    padding-top: 120px;
+    padding-left: 415px;
+    display: inline-block;
     .text__headline {
         vertical-align: top;
         display: inline-block;
